@@ -1085,10 +1085,10 @@ export default function Home() {
                 <p>Headline</p>
               </div>
               <div className="w-40">
-                <p>Nama</p>
+                <p>Testimoni</p>
               </div>
               <div className="flex-1">
-                <p>Testimoni</p>
+                <p>Nama</p>
               </div>
               <div className="w-32 flex justify-end">
                 <p>Aksi</p>
@@ -1108,12 +1108,12 @@ export default function Home() {
 
                 {/* Harga */}
                 <div className="w-40">
-                  <p>{item.nama}</p>
+                  <p>{item.testi}</p>
                 </div>
 
                 {/* Deskripsi */}
                 <div className="flex-1">
-                  <p className="truncate">{item.testi}</p>
+                  <p className="truncate">{item.nama}</p>
                 </div>
 
                 {/* Aksi */}
