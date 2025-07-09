@@ -807,7 +807,7 @@ export default function Home() {
     getDataPorto()
     getDataTesti()
     getSiteSettings()
-  }, [res])
+  }, [res, router])
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0] || null
@@ -1085,10 +1085,10 @@ export default function Home() {
                 <p>Headline</p>
               </div>
               <div className="w-40">
-                <p>Harga</p>
+                <p>Nama</p>
               </div>
               <div className="flex-1">
-                <p>Deskripsi</p>
+                <p>Testimoni</p>
               </div>
               <div className="w-32 flex justify-end">
                 <p>Aksi</p>
@@ -1108,12 +1108,12 @@ export default function Home() {
 
                 {/* Harga */}
                 <div className="w-40">
-                  <p>{item.testi}</p>
+                  <p>{item.nama}</p>
                 </div>
 
                 {/* Deskripsi */}
                 <div className="flex-1">
-                  <p className="truncate">{item.nama}</p>
+                  <p className="truncate">{item.testi}</p>
                 </div>
 
                 {/* Aksi */}
